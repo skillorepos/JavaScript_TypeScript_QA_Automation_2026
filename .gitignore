@@ -25,6 +25,9 @@ dist/
 build/
 coverage/
 
+# Compiled output from TypeScript lectures (emitted next to their .ts source)
+lectures/09-introduction-to-typescript/**/*.js
+
 # Temp files
 *.tmp
 *.temp
