@@ -1,8 +1,9 @@
 // Run from the repository root: npx tsx lectures/09-introduction-to-typescript/examples/01-basic-types-and-inference.ts
 
 // TypeScript supports the basic JavaScript data types, with explicit annotations.
-let username: string = "alice";
-let statusCode: number = 200;
+let username: any = "alice";
+username = 42; // allowed because username is of type number | string
+let statusCode = 200;
 let isLoggedIn: boolean = true;
 
 console.log(username, statusCode, isLoggedIn);

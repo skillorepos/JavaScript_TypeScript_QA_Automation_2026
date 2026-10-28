@@ -34,7 +34,7 @@ printStatus("PASS");
 type TestStatus = "PASS" | "FAIL" | "SKIP";
 
 let result: TestStatus = "PASS";
-
+// result = "ERep";
 console.log(result);
 
 // Uncommenting the next line would fail to compile: "ERROR" is not one of

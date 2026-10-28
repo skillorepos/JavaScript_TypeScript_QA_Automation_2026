@@ -6,14 +6,21 @@ interface User {
   username: string;
   email: string;
   role: string;
-  isActive: boolean;
+  isActive?: boolean;
 }
 
 const user: User = {
   username: "alice",
   email: "alice@example.com",
+  role: "admin"
+};
+console.log("user.isActive: " + user.isActive);
+
+const user2: User = {
+  username: "alice",
+  email: "alice@example.com",
   role: "admin",
-  isActive: true,
+  isActive: true
 };
 
 console.log(user);
