@@ -119,3 +119,50 @@ setTimeout(() => {
       console.log("5. [Kitchen] .finally() triggered! Always runs: Turning off the grill and cleaning the kitchen counter, whether the order succeeded or failed!");
     });
 }, 5000);
+
+
+// -----------------------------------------------------------------
+// SCENARIO 4: Build a Meal Step by Step (nested .then() calls)
+// -----------------------------------------------------------------
+function orderBurgerMeal() {
+  console.log("\n--- SCENARIO 4: Nesting Several .then() Calls ---");
+  console.log("1. [You] Ordering a burger meal...");
+
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log("2. [Kitchen] Burger is ready!");
+      resolve("🍔 Juicy Cheeseburger");
+    }, 1000);
+  });
+}
+
+// Run Scenario 4 after Scenario 3 finishes so their logs don't mix.
+setTimeout(() => {
+  orderBurgerMeal()
+    .then((burger) => {
+      console.log("3. [Kitchen] First .then(): Adding fries to:", burger);
+      // Return each nested promise so the outer catch/finally waits for every step.
+      return Promise.resolve(`${burger} + 🍟 Crispy Fries`).then((meal) => {
+        console.log("4. [Kitchen] Second .then(): Packing:", meal);
+
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            console.log("5. [Kitchen] Packing is complete!");
+            resolve(`Packed meal: ${meal}`);
+          }, 500);
+        }).then((packedMeal) => {
+          console.log("6. [You] Third .then(): Received:", packedMeal);
+
+          return Promise.resolve(`Enjoying ${packedMeal}`).then((message) => {
+            console.log("7. [You] Fourth .then():", message);
+          });
+        });
+      });
+    })
+    .catch((error) => {
+      console.log("[You] .catch(): A step in the chain failed:", error.message);
+    })
+    .finally(() => {
+      console.log("8. [Kitchen] .finally(): Cleaning up after the meal order!");
+    });
+}, 7000);
