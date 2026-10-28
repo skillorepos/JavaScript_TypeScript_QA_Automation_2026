@@ -1,5 +1,4 @@
-// Compile from the repository root: npx tsc
-// Then run: node lectures/09-introduction-to-typescript/practice/03-interfaces-practice.js
+// Run from the repository root: npx tsx lectures/09-introduction-to-typescript/practice/03-interfaces-practice.ts
 interface Product {
   name: string;
   price: number;

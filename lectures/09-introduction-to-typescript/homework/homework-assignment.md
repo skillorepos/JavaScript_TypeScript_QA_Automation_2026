@@ -11,11 +11,11 @@ Complete the assignment in `homework-solved.ts`. The file is intentionally empty
 5. Write a function `isSuccessfulStatus(statusCode: number): boolean` that returns `true` for 2xx status codes.
 6. Define an interface `ApiResponse` with `status: number` and `body: { username: string; isActive: boolean }`, then write a function `printApiResponse(response: ApiResponse): void` that logs each field.
 7. Add an optional property `retryCount?: number` to `TestResult` (or a new interface) and create one object that omits it and one that includes it.
-8. Compile the project with `npx tsc`, then run the file with `npm run test:lecture-09` (or `node lectures/09-introduction-to-typescript/homework/homework-solved.js` if the script is not yet available). Fix any compiler or runtime errors and format the `.ts` file with Prettier.
+8. Run the file with `npm run test:lecture-09` (or `npx tsx lectures/09-introduction-to-typescript/homework/homework-solved.ts` if the script is not yet available). Also run `npm run typecheck` to catch type errors that `tsx` does not report on its own. Fix any errors and format the `.ts` file with Prettier.
 9. Use GitHub Copilot for one small improvement. Explain what it suggested and describe how you verified that you understand it.
 
 Use the existing project and its npm scripts; do not create a second project or replace shared configuration.
 
 ## Optional challenge
 
-Add a `readonly` property `id: number` to `TestResult`, create a test result, and try reassigning `id` afterward. Comment out the reassignment line once you have seen the compiler error, and briefly note in a comment what the error said.
+Add a `readonly` property `id: number` to `TestResult`, create a test result, and try reassigning `id` afterward. Run `npm run typecheck` to see the compiler error, then comment out the reassignment line and briefly note in a comment what the error said.

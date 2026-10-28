@@ -1,5 +1,4 @@
-// Compile from the repository root: npx tsc
-// Then run: node lectures/09-introduction-to-typescript/examples/01-basic-types-and-inference.js
+// Run from the repository root: npx tsx lectures/09-introduction-to-typescript/examples/01-basic-types-and-inference.ts
 
 // TypeScript supports the basic JavaScript data types, with explicit annotations.
 let username: string = "alice";

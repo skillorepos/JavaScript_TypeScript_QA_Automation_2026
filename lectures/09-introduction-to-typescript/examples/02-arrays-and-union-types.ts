@@ -1,5 +1,4 @@
-// Compile from the repository root: npx tsc
-// Then run: node lectures/09-introduction-to-typescript/examples/02-arrays-and-union-types.js
+// Run from the repository root: npx tsx lectures/09-introduction-to-typescript/examples/02-arrays-and-union-types.ts
 
 // An array type annotation restricts every element to the same type.
 const browsers: string[] = ["Chrome", "Firefox", "Edge"];

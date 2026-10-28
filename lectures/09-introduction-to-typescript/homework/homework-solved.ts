@@ -1,5 +1,4 @@
-// Compile from the repository root: npx tsc
-// Then run: npm run test:lecture-09
+// Run from the repository root: npm run test:lecture-09
 type TestStatus = "PASS" | "FAIL" | "SKIP";
 
 interface TestResult {

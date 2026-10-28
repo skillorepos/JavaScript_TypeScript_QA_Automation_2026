@@ -13,7 +13,8 @@
     "test:lecture-06": "node lectures/06-objects-and-classes/homework/homework-solved.js",
     "test:lecture-07": "node lectures/07-error-handling/homework/homework-solved.js",
     "test:lecture-08": "node lectures/08-asynchronous-javascript/homework/homework-solved.js",
-    "test:lecture-09": "node lectures/09-some-next-lecture/homework/homework-solved.js"
+    "test:lecture-09": "tsx lectures/09-introduction-to-typescript/homework/homework-solved.ts",
+    "typecheck": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "eslint": "^10.11.0",
     "globals": "^17.12.0",
     "prettier": "^3.9.8",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
 }

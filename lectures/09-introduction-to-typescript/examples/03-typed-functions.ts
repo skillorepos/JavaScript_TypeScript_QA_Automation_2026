@@ -1,5 +1,4 @@
-// Compile from the repository root: npx tsc
-// Then run: node lectures/09-introduction-to-typescript/examples/03-typed-functions.js
+// Run from the repository root: npx tsx lectures/09-introduction-to-typescript/examples/03-typed-functions.ts
 
 // Parameter types and a return type make a function's contract explicit:
 // what it accepts, and what it gives back.

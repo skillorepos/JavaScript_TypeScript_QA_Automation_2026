@@ -1,5 +1,4 @@
-// Compile from the repository root: npx tsc
-// Then run: node lectures/09-introduction-to-typescript/examples/04-interfaces.js
+// Run from the repository root: npx tsx lectures/09-introduction-to-typescript/examples/04-interfaces.ts
 
 // An interface describes the expected shape of an object: which
 // properties must exist and what type each one has.

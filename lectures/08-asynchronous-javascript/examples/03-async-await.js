@@ -14,8 +14,8 @@ async function getTestStatus() {
   return "PASS";
 }
 
-getTestStatus().then((status) => {
-  console.log(status);
+getTestStatus().then((promiseResult) => {
+  console.log(promiseResult);
 });
 
 // await pauses this async function (not the whole program) until the

@@ -1,5 +1,4 @@
-// Compile from the repository root: npx tsc
-// Then run: node lectures/09-introduction-to-typescript/practice/02-union-types-practice.js
+// Run from the repository root: npx tsx lectures/09-introduction-to-typescript/practice/02-union-types-practice.ts
 type Priority = "LOW" | "MEDIUM" | "HIGH";
 
 const testCasePriorities: Priority[] = ["LOW", "HIGH", "MEDIUM"];
