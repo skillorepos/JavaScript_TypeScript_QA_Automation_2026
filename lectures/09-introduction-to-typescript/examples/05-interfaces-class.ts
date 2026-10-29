@@ -18,7 +18,12 @@ class Penguin implements Swimmer {
   swimSpeedKmh: number;
   private fishEaten = 0;
 
-  constructor(name: string, species: string, swimSpeedKmh: number, myType: MyType) {
+  constructor(
+    name: string,
+    species: string,
+    swimSpeedKmh: number,
+    myType: MyType,
+  ) {
     this.name = name;
     this.species = species;
     this.swimSpeedKmh = swimSpeedKmh;
@@ -53,3 +58,7 @@ console.log(swimmer.swim(1));
 // pingu.species = "Adelie";  // species is readonly
 // pingu.fishEaten = 10;      // fishEaten is private
 // swimmer.eat(1);            // `eat` is not part of the Swimmer interface
+
+export {};
+
+export {};

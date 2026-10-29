@@ -21,3 +21,5 @@ printProduct(product);
 console.log(
   "Practice: add a readonly sku: string property to Product and try reassigning it after creation.",
 );
+
+export {};

@@ -12,7 +12,7 @@ interface User {
 const user: User = {
   username: "alice",
   email: "alice@example.com",
-  role: "admin"
+  role: "admin",
 };
 console.log("user.isActive: " + user.isActive);
 
@@ -20,7 +20,7 @@ const user2: User = {
   username: "alice",
   email: "alice@example.com",
   role: "admin",
-  isActive: true
+  isActive: true,
 };
 
 console.log(user);
@@ -48,13 +48,13 @@ printUser({
 });
 
 // A `?` marks a property as optional: it does not have to be provided.
-interface TestUser {
+interface TestUserNew {
   username: string;
   email?: string;
 }
 
-const userWithoutEmail: TestUser = { username: "alice" };
-const userWithEmail: TestUser = {
+const userWithoutEmail: TestUserNew = { username: "alice" };
+const userWithEmail: TestUserNew = {
   username: "bob",
   email: "bob@example.com",
 };
@@ -79,3 +79,5 @@ console.log(config);
 
 // Uncommenting the next line would fail to compile: baseUrl is readonly.
 // config.baseUrl = "https://other-app.com";
+
+export {};

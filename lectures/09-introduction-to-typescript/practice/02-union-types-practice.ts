@@ -14,3 +14,5 @@ console.log(describePriority("HIGH"));
 console.log(
   'Practice: try assigning testCasePriorities[0] = "URGENT" and read the compiler error.',
 );
+
+export {};
