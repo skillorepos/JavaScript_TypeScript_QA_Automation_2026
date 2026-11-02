@@ -60,5 +60,3 @@ console.log(swimmer.swim(1));
 // swimmer.eat(1);            // `eat` is not part of the Swimmer interface
 
 export {};
-
-export {};
