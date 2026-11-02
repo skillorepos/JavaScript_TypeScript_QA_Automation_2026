@@ -7,9 +7,9 @@ enum TestStatus {
   Failed,
 }
 
-const currentStatus: TestStatus = TestStatus.Passed;
+const currentStatus: TestStatus = TestStatus.Failed;
 
-console.log(currentStatus);
+console.log("currentStatus: " + currentStatus);
 
 // A string enum associates each name with a readable string value instead,
 // which makes logs and reports easier to understand.
@@ -17,6 +17,7 @@ enum ReadableTestStatus {
   Passed = "PASS",
   Failed = "FAIL",
   Skipped = "SKIP",
+  Pending = "PENDING"
 }
 
 function printResult(status: ReadableTestStatus): void {

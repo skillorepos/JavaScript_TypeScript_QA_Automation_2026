@@ -32,6 +32,7 @@ interface UserResponse {
   username: string;
   email: string;
   isActive: boolean;
+  phone?: number;
 }
 
 function printUser(userResponse: UserResponse): void {
@@ -40,12 +41,23 @@ function printUser(userResponse: UserResponse): void {
   console.log(`Active: ${userResponse.isActive}`);
 }
 
-printUser({
+const userResponse: UserResponse = {
   id: 101,
   username: "alice",
   email: "alice@example.com",
   isActive: true,
-});
+};
+
+const userResponseWithPhone: UserResponse = {
+  id: 102,
+  username: "bob",
+  email: "bob@example.com",
+  isActive: false,
+  phone: 1234567890,
+};
+
+printUser(userResponse);
+printUser(userResponseWithPhone);
 
 // A `?` marks a property as optional: it does not have to be provided.
 interface TestUserNew {
